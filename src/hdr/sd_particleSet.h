@@ -39,8 +39,6 @@ public:
 
 	// Other
 	void applyAttractiveForces( rawData& raw ) const;
-	sd_err addSetOfParticles( rawData& raw );
-
 };
 
 #endif

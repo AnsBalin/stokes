@@ -13,14 +13,16 @@ void data::computeForces(){
 }
 
 
-void data::addSetOfParticles( particleSet& raw ){
+void data::addSetOfParticles( particleSet& ps_read ){
 
 	sd_err = error_status;
 	particleSet ps_new { ps_read };
 	ps_new.setBeginEnd( _Ntot );
 	_Ntot+=ps_new.getN();
 
-	error_status = ps_new.addSetOfParticles( _raw );
+	_raw.addSetOfParticles( ps_new );
+
+	//error_status = ps_new.addSetOfParticles( _raw );
 
 	if ( error_status )
 	{

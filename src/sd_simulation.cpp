@@ -10,7 +10,7 @@ simulation::simulation( int simnum, std::string simdir ): 	_simnum{simnum},
 	/* Pseudo-psuedocode */
 	for( auto file : directory ){
 
-		data.addSetOfParticles( readParticleSet( file ) );
+		_data.addSetOfParticles( readParticleSet( file ), simfile );
 
 	}
 

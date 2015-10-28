@@ -15,13 +15,3 @@ void particleSet::applyAttractiveForces( rawData& raw ) const{
 
 }
 
-sd_err particleSet::addSetOfParticles( particleSet& raw ){
-
-	std::vector<sd_real> r {};
-	while ( _init.nextPos( r ) )
-	
-		raw.addParticle( r );
-		
-	}
-
-}

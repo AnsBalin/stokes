@@ -19,7 +19,10 @@ public:
 
 	data() {};
 	data( int dim, int N );
+	
+	void addSetOfParticles( particleSet& ps_read );
 	void computeForces();
+
 	
 };
 #endif 
